@@ -1,8 +1,5 @@
 // Problem Statement:
-// Given a binary tree, find the 
-//maximum depth (height) of the tree. 
-//The maximum depth of a binary tree is the
-// length of the longest path from the root node to any leaf node
+// Given a binary tree, find the maximum depth (height) of the tree. The maximum depth of a binary tree is the length of the longest path from the root node to any leaf node
 class TreeNode {
     constructor(value) {
       this.value = value;
@@ -12,7 +9,7 @@ class TreeNode {
   }
 
 //javascript implementation
-  // Helper function to create a binary tree for demonstration purposes   
+  // Helper function to create a binary tree for demonstration purposes
 function createBinaryTree() {
     const root = new TreeNode(1);
     root.left = new TreeNode(2);
@@ -32,16 +29,16 @@ function maxDepth(root) {
       return 0;
     } else {
       const leftDepth = maxDepth(root.left);
-      // console.log(leftDepth)
-      console.log("leftpath:", leftDepth); 
+      console.log("left depht is",leftDepth)
       const rightDepth = maxDepth(root.right);
-      // console.log(rightDepth)
+      console.log("right depht is",rightDepth)
       return 1 + Math.max(leftDepth, rightDepth);
     }
   }
   
   // Example usage:
   const root = createBinaryTree();
+   console.log("root is",root)
   const depth = maxDepth(root);
   console.log("Maximum Depth of Binary Tree:", depth); // Output: Maximum Depth of Binary Tree: 3
   

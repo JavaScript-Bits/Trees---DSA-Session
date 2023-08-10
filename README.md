@@ -1,7 +1,7 @@
  # WHAT ARE TREESS
   A tree is a **hierarchical data structure** consisting of nodes connected by edges
 
- - Each node in a tree has a parent node (except for the root node) and zero or more child nodes. The topmost node in a tree is called the "root," and nodes with no children are called "leaves."
+ - Each node in a tree has a parent node (except for the root node) and zero or more child nodes. The topmost node in a tree is called the "root," and nodes with no children are called "leafs."
 
   [image visualization of a tree structure](https://media.geeksforgeeks.org/wp-content/uploads/20221124153129/Treedatastructure.png)
 

@@ -23,7 +23,7 @@ class Node {
         this.insertNode(this.root, newNode);
       }
     }
-    //helper function
+  
     insertNode(node, newNode) {
       if (newNode.value < node.value) {
         if (node.left === null) {
@@ -60,19 +60,19 @@ class Node {
   
   // Example usage:
   const bst = new BinarySearchTree();
-   bst.insert(5);
-   bst.insert(3);
-   bst.insert(8);
-   bst.insert(1);
+  bst.insert(5);
+  bst.insert(3);
+  bst.insert(8);
+  bst.insert(1);
   bst.insert(4);
   bst.insert(7);
-   bst.insert(9);
+  bst.insert(9);
 
+//   console.log(bst)
   
-  const targetValue = 7;
+  const targetValue = 10;
   const result = bst.search(targetValue);
   
-  console.log(bst)
   if (result) {
     console.log(`Found ${targetValue} in the BST.`);
   } else {
